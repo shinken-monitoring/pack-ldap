@@ -6,11 +6,14 @@
 "path":"network/services/",
 
 "macros":{
+         "_LDAPADDRESS": {"type":"string",
+                       "description":"The hostname of the LDAP server."
+                      },
          "_LDAPBASE": {"type":"string",
-                       "description":"The read snmp community allowed on the linux server"
+                       "description":"The LDAP base of the server."
                       },
          "_DOMAIN": {"type":"string",
-                     "description": "Windows Domain of the server"
+                     "description": "Windows Domain of the server."
                       },
          "_DOMAINUSERSHORT": {"type":"string",
                               "description": "Short name (without the domain) of the user to query the server. Should have rights on the WMI tables for reading."
